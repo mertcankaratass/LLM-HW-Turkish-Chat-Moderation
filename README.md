@@ -12,12 +12,12 @@ are masked, and a side panel logs the response time of every message and lets th
 ![The app: live labels with P(offensive), masked messages, response-time log and model comparison](docs/app_screenshot.png)
 
 - **Demo video:** _link added at submission_
-- **Trained models (Hugging Face Hub, ~600 MB):** https://huggingface.co/mertcankaratas/turkish-chat-moderation
+- **Trained models (Hugging Face Hub, 650 MB):** https://huggingface.co/mertcankaratas/turkish-chat-moderation
   (mirror: one 577 MB archive on [Google Drive](https://drive.google.com/file/d/1YgSwdN9ispbIZBIR4Ocdg_s6bcXh6YTL/view))
 
 ## Quick start
 
-Requirements: Python 3.12 (tested on Windows 11), ~2 GB free disk, internet for the first run.
+Requirements: Python 3.12 (tested on Windows 11), about 3 GB free disk (Python packages 2 GB + models 650 MB), internet for the first run.
 
 ```bash
 git clone https://github.com/mertcankaratass/LLM-HW-Turkish-Chat-Moderation.git
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open http://127.0.0.1:7860. On the first run the app downloads the trained models (~600 MB) from the
+Open http://127.0.0.1:7860. On the first run the app downloads the trained models (650 MB) from the
 Hugging Face Hub into `models/`, pinned to the exact commit that produced the results below. If the Hub
 cannot be reached, it downloads the same files as one archive from the Google Drive mirror, checks its
 SHA-256 checksum and extracts it. Later runs start directly.
@@ -113,7 +113,7 @@ python scripts/explore_data.py       # dataset statistics
 python scripts/train_lexicon.py      # rule baseline (lexicon + edit distance), tuned on val
 python scripts/train_tfidf.py        # tf-idf + logistic regression, tuned on val
 python scripts/train_w2v_ffn.py      # own word2vec + feedforward network (SGD)
-python scripts/train_bert.py         # BERTurk fine-tuning (NVIDIA GPU recommended, ~6 min on an RTX 4060)
+python scripts/train_bert.py         # BERTurk fine-tuning (NVIDIA GPU recommended; 3 epochs = 5.3 min on an RTX 4060)
 python scripts/quantize.py           # dynamic INT8 quantization + BERTurk thresholds on val (CPU, 1 message)
 python scripts/evaluate_all.py       # final comparison on the test set (results table)
 python scripts/benchmark_threads.py  # latency with 1 / 2 / 4 CPU threads

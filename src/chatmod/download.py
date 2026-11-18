@@ -93,7 +93,7 @@ def ensure_models(models_dir: Path = MODELS) -> None:
     try:
         if HF_REVISION.startswith("PASTE_"):
             raise RuntimeError("no Hugging Face revision configured")
-        print(f"Downloading the trained models (~600 MB, one time) from the Hugging Face Hub: {HF_URL}")
+        print(f"Downloading the trained models (650 MB, one time) from the Hugging Face Hub: {HF_URL}")
         _fetch_hf(models_dir)
         if _missing(models_dir):
             raise RuntimeError(f"files missing after download: {_missing(models_dir)}")
