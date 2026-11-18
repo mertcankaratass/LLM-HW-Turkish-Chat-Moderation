@@ -1,0 +1,68 @@
+{
+ "confusion_matrices": {
+  "lexicon": {
+   "TN": 2556,
+   "FP": 256,
+   "FN": 427,
+   "TP": 289
+  },
+  "tfidf": {
+   "TN": 2606,
+   "FP": 206,
+   "FN": 290,
+   "TP": 426
+  },
+  "ffn": {
+   "TN": 2540,
+   "FP": 272,
+   "FN": 405,
+   "TP": 311
+  },
+  "bert_fp32": {
+   "TN": 2675,
+   "FP": 137,
+   "FN": 245,
+   "TP": 471
+  },
+  "bert_int8": {
+   "TN": 2661,
+   "FP": 151,
+   "FN": 248,
+   "TP": 468
+  }
+ },
+ "noisy_subset": {
+  "leet_or_repeats": {
+   "tweets": 139,
+   "offensive": 33,
+   "lexicon": 0.754,
+   "tfidf": 0.7662,
+   "ffn": 0.6325,
+   "bert_fp32": 0.8386,
+   "bert_int8": 0.83
+  },
+  "no_turkish_letters": {
+   "tweets": 150,
+   "offensive": 36,
+   "lexicon": 0.7288,
+   "tfidf": 0.8616,
+   "ffn": 0.7152,
+   "bert_fp32": 0.8247,
+   "bert_int8": 0.8063
+  }
+ },
+ "disagreements": {
+  "only_bert_int8_right_vs_tfidf": 220,
+  "only_tfidf_right_vs_bert_int8": 123,
+  "all_five_wrong": 164,
+  "all_five_right": 2376
+ },
+ "quantization_effect": {
+  "predictions_changed": 47,
+  "of": 3528,
+  "share": 0.0133,
+  "changed_and_int8_correct": 15,
+  "changed_and_int8_wrong": 32,
+  "mean_abs_prob_diff": 0.022
+ }
+}

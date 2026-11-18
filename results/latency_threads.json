@@ -1,0 +1,44 @@
+[
+ {
+  "threads": 1,
+  "precision": "FP32",
+  "runs": 200,
+  "mean_ms": 60.56,
+  "p95_ms": 113.03
+ },
+ {
+  "threads": 1,
+  "precision": "INT8",
+  "runs": 200,
+  "mean_ms": 32.12,
+  "p95_ms": 62.32
+ },
+ {
+  "threads": 2,
+  "precision": "FP32",
+  "runs": 200,
+  "mean_ms": 38.0,
+  "p95_ms": 64.1
+ },
+ {
+  "threads": 2,
+  "precision": "INT8",
+  "runs": 200,
+  "mean_ms": 21.91,
+  "p95_ms": 38.62
+ },
+ {
+  "threads": 4,
+  "precision": "FP32",
+  "runs": 200,
+  "mean_ms": 25.64,
+  "p95_ms": 44.6
+ },
+ {
+  "threads": 4,
+  "precision": "INT8",
+  "runs": 200,
+  "mean_ms": 16.76,
+  "p95_ms": 26.68
+ }
+]

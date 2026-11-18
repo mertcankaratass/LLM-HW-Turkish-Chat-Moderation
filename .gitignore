@@ -1,0 +1,29 @@
+# Instructor's internal assignment document - never publish
+ASSIGNMENT.md
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Data and model weights (downloaded / hosted on Hugging Face Hub)
+data/
+models/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local assistant instructions (not part of the submission)
+AGENTS.md
+HOMEWORK_TRACKER.md
+*.egg-info/
+results/local/
+dist/

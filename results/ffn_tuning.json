@@ -1,0 +1,61 @@
+{
+ "w2v_vocab": 28348,
+ "runs": [
+  {
+   "hidden": 128,
+   "lr": 0.005,
+   "best_epoch": 92,
+   "threshold": 0.57,
+   "val_macro_f1": 0.7054
+  },
+  {
+   "hidden": 128,
+   "lr": 0.01,
+   "best_epoch": 44,
+   "threshold": 0.67,
+   "val_macro_f1": 0.7022
+  },
+  {
+   "hidden": 128,
+   "lr": 0.05,
+   "best_epoch": 24,
+   "threshold": 0.69,
+   "val_macro_f1": 0.6963
+  },
+  {
+   "hidden": 128,
+   "lr": 0.1,
+   "best_epoch": 34,
+   "threshold": 0.55,
+   "val_macro_f1": 0.691
+  },
+  {
+   "hidden": 256,
+   "lr": 0.005,
+   "best_epoch": 61,
+   "threshold": 0.71,
+   "val_macro_f1": 0.7043
+  },
+  {
+   "hidden": 256,
+   "lr": 0.01,
+   "best_epoch": 44,
+   "threshold": 0.66,
+   "val_macro_f1": 0.7073
+  },
+  {
+   "hidden": 256,
+   "lr": 0.05,
+   "best_epoch": 21,
+   "threshold": 0.64,
+   "val_macro_f1": 0.6988
+  },
+  {
+   "hidden": 256,
+   "lr": 0.1,
+   "best_epoch": 31,
+   "threshold": 0.62,
+   "val_macro_f1": 0.6909
+  }
+ ]
+}

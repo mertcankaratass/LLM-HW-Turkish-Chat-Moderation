@@ -1,0 +1,31 @@
+{
+ "model": "dbmdz/bert-base-turkish-uncased",
+ "revision": "refs/pr/1",
+ "max_len": 128,
+ "batch": 32,
+ "lr": 2e-05,
+ "epochs": [
+  {
+   "epoch": 1,
+   "train_loss": 0.3349,
+   "val_macro_f1": 0.8331,
+   "threshold": 0.42,
+   "minutes": 1.7
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.2108,
+   "val_macro_f1": 0.8304,
+   "threshold": 0.34,
+   "minutes": 1.8
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.1356,
+   "val_macro_f1": 0.8316,
+   "threshold": 0.48,
+   "minutes": 1.8
+  }
+ ],
+ "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+}

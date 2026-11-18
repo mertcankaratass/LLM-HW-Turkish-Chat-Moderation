@@ -1,0 +1,402 @@
+[
+ {
+  "prefix_match": false,
+  "min_count": 5,
+  "min_ratio": 0.5,
+  "lexicon_size": 1041,
+  "val_macro_f1": 0.3605,
+  "val_seconds": 71.29
+ },
+ {
+  "prefix_match": false,
+  "min_count": 5,
+  "min_ratio": 0.6,
+  "lexicon_size": 624,
+  "val_macro_f1": 0.4618,
+  "val_seconds": 44.49
+ },
+ {
+  "prefix_match": false,
+  "min_count": 5,
+  "min_ratio": 0.7,
+  "lexicon_size": 316,
+  "val_macro_f1": 0.583,
+  "val_seconds": 22.39
+ },
+ {
+  "prefix_match": false,
+  "min_count": 5,
+  "min_ratio": 0.8,
+  "lexicon_size": 231,
+  "val_macro_f1": 0.6206,
+  "val_seconds": 17.4
+ },
+ {
+  "prefix_match": false,
+  "min_count": 5,
+  "min_ratio": 0.9,
+  "lexicon_size": 98,
+  "val_macro_f1": 0.6409,
+  "val_seconds": 7.53
+ },
+ {
+  "prefix_match": false,
+  "min_count": 10,
+  "min_ratio": 0.5,
+  "lexicon_size": 336,
+  "val_macro_f1": 0.5233,
+  "val_seconds": 17.21
+ },
+ {
+  "prefix_match": false,
+  "min_count": 10,
+  "min_ratio": 0.6,
+  "lexicon_size": 173,
+  "val_macro_f1": 0.6294,
+  "val_seconds": 8.05
+ },
+ {
+  "prefix_match": false,
+  "min_count": 10,
+  "min_ratio": 0.7,
+  "lexicon_size": 97,
+  "val_macro_f1": 0.6508,
+  "val_seconds": 5.06
+ },
+ {
+  "prefix_match": false,
+  "min_count": 10,
+  "min_ratio": 0.8,
+  "lexicon_size": 60,
+  "val_macro_f1": 0.6383,
+  "val_seconds": 3.13
+ },
+ {
+  "prefix_match": false,
+  "min_count": 10,
+  "min_ratio": 0.9,
+  "lexicon_size": 34,
+  "val_macro_f1": 0.6126,
+  "val_seconds": 1.62
+ },
+ {
+  "prefix_match": false,
+  "min_count": 20,
+  "min_ratio": 0.5,
+  "lexicon_size": 103,
+  "val_macro_f1": 0.6442,
+  "val_seconds": 4.48
+ },
+ {
+  "prefix_match": false,
+  "min_count": 20,
+  "min_ratio": 0.6,
+  "lexicon_size": 58,
+  "val_macro_f1": 0.6641,
+  "val_seconds": 2.44
+ },
+ {
+  "prefix_match": false,
+  "min_count": 20,
+  "min_ratio": 0.7,
+  "lexicon_size": 35,
+  "val_macro_f1": 0.6425,
+  "val_seconds": 1.67
+ },
+ {
+  "prefix_match": false,
+  "min_count": 20,
+  "min_ratio": 0.8,
+  "lexicon_size": 19,
+  "val_macro_f1": 0.6196,
+  "val_seconds": 1.06
+ },
+ {
+  "prefix_match": false,
+  "min_count": 20,
+  "min_ratio": 0.9,
+  "lexicon_size": 11,
+  "val_macro_f1": 0.594,
+  "val_seconds": 0.53
+ },
+ {
+  "prefix_match": false,
+  "min_count": 30,
+  "min_ratio": 0.5,
+  "lexicon_size": 56,
+  "val_macro_f1": 0.6429,
+  "val_seconds": 2.97
+ },
+ {
+  "prefix_match": false,
+  "min_count": 30,
+  "min_ratio": 0.6,
+  "lexicon_size": 33,
+  "val_macro_f1": 0.6451,
+  "val_seconds": 1.82
+ },
+ {
+  "prefix_match": false,
+  "min_count": 30,
+  "min_ratio": 0.7,
+  "lexicon_size": 18,
+  "val_macro_f1": 0.6123,
+  "val_seconds": 0.93
+ },
+ {
+  "prefix_match": false,
+  "min_count": 30,
+  "min_ratio": 0.8,
+  "lexicon_size": 12,
+  "val_macro_f1": 0.5914,
+  "val_seconds": 0.62
+ },
+ {
+  "prefix_match": false,
+  "min_count": 30,
+  "min_ratio": 0.9,
+  "lexicon_size": 6,
+  "val_macro_f1": 0.5647,
+  "val_seconds": 0.33
+ },
+ {
+  "prefix_match": false,
+  "min_count": 50,
+  "min_ratio": 0.5,
+  "lexicon_size": 20,
+  "val_macro_f1": 0.6246,
+  "val_seconds": 0.93
+ },
+ {
+  "prefix_match": false,
+  "min_count": 50,
+  "min_ratio": 0.6,
+  "lexicon_size": 12,
+  "val_macro_f1": 0.5975,
+  "val_seconds": 0.64
+ },
+ {
+  "prefix_match": false,
+  "min_count": 50,
+  "min_ratio": 0.7,
+  "lexicon_size": 7,
+  "val_macro_f1": 0.5749,
+  "val_seconds": 0.35
+ },
+ {
+  "prefix_match": false,
+  "min_count": 50,
+  "min_ratio": 0.8,
+  "lexicon_size": 5,
+  "val_macro_f1": 0.5606,
+  "val_seconds": 0.26
+ },
+ {
+  "prefix_match": false,
+  "min_count": 50,
+  "min_ratio": 0.9,
+  "lexicon_size": 3,
+  "val_macro_f1": 0.5386,
+  "val_seconds": 0.13
+ },
+ {
+  "prefix_match": true,
+  "min_count": 5,
+  "min_ratio": 0.5,
+  "lexicon_size": 1041,
+  "val_macro_f1": 0.2622,
+  "val_seconds": 133.05
+ },
+ {
+  "prefix_match": true,
+  "min_count": 5,
+  "min_ratio": 0.6,
+  "lexicon_size": 624,
+  "val_macro_f1": 0.3695,
+  "val_seconds": 80.41
+ },
+ {
+  "prefix_match": true,
+  "min_count": 5,
+  "min_ratio": 0.7,
+  "lexicon_size": 316,
+  "val_macro_f1": 0.5211,
+  "val_seconds": 47.03
+ },
+ {
+  "prefix_match": true,
+  "min_count": 5,
+  "min_ratio": 0.8,
+  "lexicon_size": 231,
+  "val_macro_f1": 0.5773,
+  "val_seconds": 30.76
+ },
+ {
+  "prefix_match": true,
+  "min_count": 5,
+  "min_ratio": 0.9,
+  "lexicon_size": 98,
+  "val_macro_f1": 0.616,
+  "val_seconds": 12.95
+ },
+ {
+  "prefix_match": true,
+  "min_count": 10,
+  "min_ratio": 0.5,
+  "lexicon_size": 336,
+  "val_macro_f1": 0.4313,
+  "val_seconds": 39.25
+ },
+ {
+  "prefix_match": true,
+  "min_count": 10,
+  "min_ratio": 0.6,
+  "lexicon_size": 173,
+  "val_macro_f1": 0.5701,
+  "val_seconds": 19.57
+ },
+ {
+  "prefix_match": true,
+  "min_count": 10,
+  "min_ratio": 0.7,
+  "lexicon_size": 97,
+  "val_macro_f1": 0.6337,
+  "val_seconds": 12.63
+ },
+ {
+  "prefix_match": true,
+  "min_count": 10,
+  "min_ratio": 0.8,
+  "lexicon_size": 60,
+  "val_macro_f1": 0.6426,
+  "val_seconds": 7.19
+ },
+ {
+  "prefix_match": true,
+  "min_count": 10,
+  "min_ratio": 0.9,
+  "lexicon_size": 34,
+  "val_macro_f1": 0.6162,
+  "val_seconds": 4.19
+ },
+ {
+  "prefix_match": true,
+  "min_count": 20,
+  "min_ratio": 0.5,
+  "lexicon_size": 103,
+  "val_macro_f1": 0.6172,
+  "val_seconds": 10.73
+ },
+ {
+  "prefix_match": true,
+  "min_count": 20,
+  "min_ratio": 0.6,
+  "lexicon_size": 58,
+  "val_macro_f1": 0.6516,
+  "val_seconds": 5.86
+ },
+ {
+  "prefix_match": true,
+  "min_count": 20,
+  "min_ratio": 0.7,
+  "lexicon_size": 35,
+  "val_macro_f1": 0.6482,
+  "val_seconds": 3.52
+ },
+ {
+  "prefix_match": true,
+  "min_count": 20,
+  "min_ratio": 0.8,
+  "lexicon_size": 19,
+  "val_macro_f1": 0.6309,
+  "val_seconds": 1.75
+ },
+ {
+  "prefix_match": true,
+  "min_count": 20,
+  "min_ratio": 0.9,
+  "lexicon_size": 11,
+  "val_macro_f1": 0.5972,
+  "val_seconds": 1.07
+ },
+ {
+  "prefix_match": true,
+  "min_count": 30,
+  "min_ratio": 0.5,
+  "lexicon_size": 56,
+  "val_macro_f1": 0.6385,
+  "val_seconds": 5.36
+ },
+ {
+  "prefix_match": true,
+  "min_count": 30,
+  "min_ratio": 0.6,
+  "lexicon_size": 33,
+  "val_macro_f1": 0.6571,
+  "val_seconds": 2.97
+ },
+ {
+  "prefix_match": true,
+  "min_count": 30,
+  "min_ratio": 0.7,
+  "lexicon_size": 18,
+  "val_macro_f1": 0.6313,
+  "val_seconds": 1.67
+ },
+ {
+  "prefix_match": true,
+  "min_count": 30,
+  "min_ratio": 0.8,
+  "lexicon_size": 12,
+  "val_macro_f1": 0.6084,
+  "val_seconds": 1.11
+ },
+ {
+  "prefix_match": true,
+  "min_count": 30,
+  "min_ratio": 0.9,
+  "lexicon_size": 6,
+  "val_macro_f1": 0.5731,
+  "val_seconds": 0.63
+ },
+ {
+  "prefix_match": true,
+  "min_count": 50,
+  "min_ratio": 0.5,
+  "lexicon_size": 20,
+  "val_macro_f1": 0.6464,
+  "val_seconds": 1.98
+ },
+ {
+  "prefix_match": true,
+  "min_count": 50,
+  "min_ratio": 0.6,
+  "lexicon_size": 12,
+  "val_macro_f1": 0.6208,
+  "val_seconds": 1.26
+ },
+ {
+  "prefix_match": true,
+  "min_count": 50,
+  "min_ratio": 0.7,
+  "lexicon_size": 7,
+  "val_macro_f1": 0.5824,
+  "val_seconds": 0.58
+ },
+ {
+  "prefix_match": true,
+  "min_count": 50,
+  "min_ratio": 0.8,
+  "lexicon_size": 5,
+  "val_macro_f1": 0.57,
+  "val_seconds": 0.5
+ },
+ {
+  "prefix_match": true,
+  "min_count": 50,
+  "min_ratio": 0.9,
+  "lexicon_size": 3,
+  "val_macro_f1": 0.5386,
+  "val_seconds": 0.26
+ }
+]

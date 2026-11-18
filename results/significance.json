@@ -1,0 +1,72 @@
+{
+ "n_boot": 10000,
+ "seed": 42,
+ "test_size": 3528,
+ "pairs": [
+  {
+   "a": "bert_fp32",
+   "b": "bert_int8",
+   "model_a": "BERTurk (fine-tuned) (FP32)",
+   "model_b": "BERTurk (dynamic quantization) (INT8)",
+   "diff_macro_f1": 0.0067,
+   "ci95": [
+    0.0004,
+    0.0131
+   ],
+   "p_value": 0.0352,
+   "significant_5pct": true
+  },
+  {
+   "a": "bert_int8",
+   "b": "tfidf",
+   "model_a": "BERTurk (dynamic quantization) (INT8)",
+   "model_b": "tf-idf + logistic regression (FP64)",
+   "diff_macro_f1": 0.0431,
+   "ci95": [
+    0.0263,
+    0.0595
+   ],
+   "p_value": 0.0,
+   "significant_5pct": true
+  },
+  {
+   "a": "bert_fp32",
+   "b": "tfidf",
+   "model_a": "BERTurk (fine-tuned) (FP32)",
+   "model_b": "tf-idf + logistic regression (FP64)",
+   "diff_macro_f1": 0.0498,
+   "ci95": [
+    0.0329,
+    0.0666
+   ],
+   "p_value": 0.0,
+   "significant_5pct": true
+  },
+  {
+   "a": "tfidf",
+   "b": "ffn",
+   "model_a": "tf-idf + logistic regression (FP64)",
+   "model_b": "word2vec + feedforward NN (FP32)",
+   "diff_macro_f1": 0.092,
+   "ci95": [
+    0.0715,
+    0.1125
+   ],
+   "p_value": 0.0,
+   "significant_5pct": true
+  },
+  {
+   "a": "ffn",
+   "b": "lexicon",
+   "model_a": "word2vec + feedforward NN (FP32)",
+   "model_b": "Lexicon + edit distance (rule) (rules)",
+   "diff_macro_f1": 0.0104,
+   "ci95": [
+    -0.0128,
+    0.0337
+   ],
+   "p_value": 0.387,
+   "significant_5pct": false
+  }
+ ]
+}

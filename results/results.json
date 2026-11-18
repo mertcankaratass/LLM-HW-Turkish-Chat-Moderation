@@ -1,0 +1,88 @@
+{
+ "hardware": {
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700H",
+  "torch_threads": 1,
+  "torch": "2.5.1+cu121",
+  "os": "Windows-11-10.0.26300-SP0",
+  "device": "cpu"
+ },
+ "budget_ms": 50.0,
+ "test_size": 3528,
+ "models": [
+  {
+   "id": "lexicon",
+   "model": "Lexicon + edit distance (rule)",
+   "precision": "rules",
+   "macro_f1": 0.6703,
+   "accuracy": 0.8064,
+   "precision_offensive": 0.5303,
+   "recall_offensive": 0.4036,
+   "size_mb": 0.0009,
+   "latency_ms_mean": 0.03,
+   "latency_ms_p95": 0.06,
+   "latency_runs": 300,
+   "meets_budget": true,
+   "threshold": 0.5
+  },
+  {
+   "id": "tfidf",
+   "model": "tf-idf + logistic regression",
+   "precision": "FP64",
+   "macro_f1": 0.7726,
+   "accuracy": 0.8594,
+   "precision_offensive": 0.6741,
+   "recall_offensive": 0.595,
+   "size_mb": 3.8781,
+   "latency_ms_mean": 0.81,
+   "latency_ms_p95": 1.09,
+   "latency_runs": 300,
+   "meets_budget": true,
+   "threshold": 0.58
+  },
+  {
+   "id": "ffn",
+   "model": "word2vec + feedforward NN",
+   "precision": "FP32",
+   "macro_f1": 0.6806,
+   "accuracy": 0.8081,
+   "precision_offensive": 0.5334,
+   "recall_offensive": 0.4344,
+   "size_mb": 44.2906,
+   "latency_ms_mean": 0.1,
+   "latency_ms_p95": 0.16,
+   "latency_runs": 300,
+   "meets_budget": true,
+   "threshold": 0.66
+  },
+  {
+   "id": "bert_fp32",
+   "model": "BERTurk (fine-tuned)",
+   "precision": "FP32",
+   "macro_f1": 0.8224,
+   "accuracy": 0.8917,
+   "precision_offensive": 0.7747,
+   "recall_offensive": 0.6578,
+   "size_mb": 422.0,
+   "latency_ms_mean": 63.97,
+   "latency_ms_p95": 117.54,
+   "latency_runs": 300,
+   "meets_budget": false,
+   "threshold": 0.42
+  },
+  {
+   "id": "bert_int8",
+   "model": "BERTurk (dynamic quantization)",
+   "precision": "INT8",
+   "macro_f1": 0.8157,
+   "accuracy": 0.8869,
+   "precision_offensive": 0.7561,
+   "recall_offensive": 0.6536,
+   "size_mb": 177.4169,
+   "latency_ms_mean": 32.78,
+   "latency_ms_p95": 62.97,
+   "latency_runs": 300,
+   "meets_budget": true,
+   "threshold": 0.34
+  }
+ ]
+}

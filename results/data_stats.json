@@ -1,0 +1,45 @@
+{
+  "train": {
+    "tweets": 28580,
+    "offensive": 5518,
+    "offensive_ratio": 0.1931,
+    "words_mean": 15.5,
+    "words_p95": 36,
+    "words_max": 82,
+    "with_@USER": 13587,
+    "with_URL": 8,
+    "with_repeated_letters(3+)": 1121,
+    "with_digit_inside_word": 100,
+    "duplicate_texts": 9
+  },
+  "val": {
+    "tweets": 3176,
+    "offensive": 613,
+    "offensive_ratio": 0.193,
+    "words_mean": 15.3,
+    "words_p95": 35,
+    "words_max": 59,
+    "with_@USER": 1491,
+    "with_URL": 1,
+    "with_repeated_letters(3+)": 114,
+    "with_digit_inside_word": 5,
+    "duplicate_texts": 0
+  },
+  "test": {
+    "tweets": 3528,
+    "offensive": 716,
+    "offensive_ratio": 0.2029,
+    "words_mean": 15.8,
+    "words_p95": 36,
+    "words_max": 58,
+    "with_@USER": 1684,
+    "with_URL": 2,
+    "with_repeated_letters(3+)": 156,
+    "with_digit_inside_word": 10,
+    "duplicate_texts": 0
+  },
+  "overlap": {
+    "val_texts_in_train": 0,
+    "test_texts_in_train": 0
+  }
+}

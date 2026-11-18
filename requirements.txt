@@ -1,0 +1,15 @@
+torch==2.5.1
+transformers==4.57.6
+huggingface_hub==0.36.2
+safetensors==0.8.0
+tokenizers==0.22.2
+gensim==4.4.0
+scikit-learn==1.7.2
+joblib
+numpy==2.2.6
+pandas==2.3.3
+gradio==6.9.0
+gdown==6.5.1
+matplotlib==3.10.7
+pytest
+-e .
