@@ -55,8 +55,11 @@ def _missing(models_dir: Path) -> list[str]:
 
 
 def _fetch_hf(models_dir: Path) -> None:
-    from huggingface_hub import snapshot_download
+    from huggingface_hub import constants, snapshot_download
 
+    # Plain HTTPS download, the same on every machine: it needs no optional "hf_xet" package (without it the
+    # Hub prints a notice) and avoids the Xet transfer stalls we saw on Windows.
+    constants.HF_HUB_DISABLE_XET = True
     snapshot_download(repo_id=HF_REPO_ID, revision=HF_REVISION, local_dir=str(models_dir),
                       allow_patterns=REQUIRED_FILES)
 
