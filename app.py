@@ -22,7 +22,7 @@ from chatmod.normalize import normalization_steps
 from chatmod.predictors import load_all
 
 BUDGET_MS = 50.0
-ensure_models()  # first run: downloads the trained models from Google Drive
+ensure_models()  # first run: downloads the trained models (Hugging Face Hub, Google Drive mirror as fallback)
 PREDICTORS = load_all()  # also fixes PyTorch to CPU_THREADS thread(s), as in the evaluation
 for _p in PREDICTORS.values():  # warm-up: the first call of a PyTorch model is slow (one-time setup)
     for _ in range(3):

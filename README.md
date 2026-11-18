@@ -86,6 +86,12 @@ Laptop latency varies between runs (one-core FP32: 63.97 ms in the main evaluati
 benchmark; INT8: 32.78 / 32.12 ms); FP32 missed and INT8 met the budget in both. Error analysis:
 `results/error_analysis.json`, `results/error_examples.md` (tweet ids). Figures: `results/figures/`.
 
+## Architecture
+
+![Architecture: browser input, preprocessing, the five models with precision and size, post-processing, browser output, and the offline path that built the models](docs/architecture.png)
+
+Generated from the code and the results by `scripts/make_architecture_diagram.py` (`docs/architecture.svg`).
+
 ## Techniques
 
 | Area | Technique | Where |
@@ -114,6 +120,7 @@ python scripts/benchmark_threads.py  # latency with 1 / 2 / 4 CPU threads
 python scripts/error_analysis.py     # confusion matrices, noisy subsets, error examples
 python scripts/significance.py      # paired bootstrap test of the macro-F1 differences
 python scripts/make_figures.py       # figures for the presentation
+python scripts/make_architecture_diagram.py  # architecture diagram (docs/architecture.svg)
 python scripts/upload_models.py     # upload the models to the Hugging Face Hub (needs `hf auth login`)
 python scripts/package_models.py     # archive for the Google Drive mirror
 python -m pytest                     # unit tests
@@ -135,7 +142,7 @@ scripts/                data preparation, training, quantization, evaluation, fi
 tests/                  unit tests (normalization, edit distance / lexicon, model download) and integrity
                         tests (splits, published results reproduced by the downloaded models)
 results/                result tables, JSON logs, error analysis, figures (all produced by scripts)
-docs/                   app screenshot
+docs/                   app screenshot, architecture diagram
 hub/                    model card of the Hugging Face repository
 data/, models/          created locally (not in the repository)
 ```
