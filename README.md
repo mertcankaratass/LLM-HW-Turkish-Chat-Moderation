@@ -157,6 +157,11 @@ data/, models/          created locally (not in the repository)
 - INT8 p95 latency (63 ms) exceeds the budget; the budget is defined on the mean.
 - Tweets are not game chat; the domain shift to real game chat is not measured.
 - One tweet text appears in both the official training and test sets (it fell into our validation split).
+- Failure examples from live tests: an insult written with dots between the letters (`e.z.*.*`) is not caught,
+  because `normalize()` only joins letters around digits; a swear word with two letters swapped (`o****u`) is
+  missed by all five models, while the correct spelling is flagged by all five (BERTurk's WordPiece splits the
+  typo into three sub-word pieces; plain Levenshtein counts a swap as two edits). Next steps: join dotted
+  spellings and count a swap as one edit (Damerau-Levenshtein).
 
 ## Data, models and libraries
 
@@ -164,4 +169,8 @@ data/, models/          created locally (not in the repository)
   https://coltekin.github.io/offensive-turkish/ — annotations CC-BY.
 - Stefan Schweter. *BERTurk – BERT models for Turkish.* 2020. https://huggingface.co/dbmdz/bert-base-turkish-uncased
   (loaded from revision `refs/pr/1`, the safetensors conversion of the same weights).
+- Jacob Devlin, Ming-Wei Chang, Kenton Lee, Kristina Toutanova. *BERT: Pre-training of Deep Bidirectional
+  Transformers for Language Understanding.* NAACL 2019.
+- Tomas Mikolov, Kai Chen, Greg Corrado, Jeffrey Dean. *Efficient Estimation of Word Representations in Vector
+  Space.* 2013 (word2vec; trained here with gensim on our own training messages).
 - PyTorch, Hugging Face Transformers and Hub, scikit-learn, gensim, Gradio, gdown, pandas, matplotlib.
