@@ -134,16 +134,16 @@ def main() -> None:
     s.append(box(1005, 414, 300, 76, "Normalization tags", ["normalization_steps(): which",
                                                             "regex rules fired (no words shown)"]))
     s.append(box(1005, 508, 300, 96, "Latency · app.py classify()", ["time.perf_counter() around the", "model call · budget 50 ms (mean)",
-                                                 "ping meter: ≤25 · ≤50 · over"]))
+                                                 "over 50 ms: shown in red"]))
 
     # ---- browser (output) ----
     s.append(container(1340, 110, 230, 560, "BROWSER · OUTPUT", None))
     s.append(box(1352, 150, 206, 200, "Chat feed", ["one line per message:", "CLEAN / FLAGGED + P(off),",
                                                     "masked text,", "normalization tags,", "ms and model"]))
-    s.append(box(1352, 368, 206, 112, "Compare table", ["5 models side by side:", "verdict, threshold,",
-                                                        "ms, ping"]))
-    s.append(box(1352, 498, 206, 150, "Response-time log", ["side panel: ms of every", "message, mean, % within",
-                                                            "budget, chart with", "the 50 ms line"]))
+    s.append(box(1352, 368, 206, 112, "Compare table", ["5 models side by side:", "verdict + P(off), ms;",
+                                                        "threshold on hover"]))
+    s.append(box(1352, 498, 206, 150, "Response-time log", ["side panel: ms of every", "message, count, flagged,",
+                                                            "mean ms, messages", "within 50 ms"]))
 
     # ---- arrows: inference ----
     s.append(arrow([(265, 206), (315, 206)]))                                   # message -> normalize

@@ -84,7 +84,7 @@
 <text x="1017" y="532" font-size="16" font-weight="700" fill="#1f2933">Latency · app.py classify()</text>
 <text x="1017" y="554" font-size="13.5" fill="#52606d">time.perf_counter() around the</text>
 <text x="1017" y="573" font-size="13.5" fill="#52606d">model call · budget 50 ms (mean)</text>
-<text x="1017" y="592" font-size="13.5" fill="#52606d">ping meter: ≤25 · ≤50 · over</text>
+<text x="1017" y="592" font-size="13.5" fill="#52606d">over 50 ms: shown in red</text>
 <rect x="1340" y="110" width="230" height="560" rx="12" fill="#f5f7fa" stroke="#7b8794" stroke-width="1.3" stroke-dasharray="7 5"/>
 <text x="1354" y="132" font-size="13" font-weight="700" letter-spacing="1.2" fill="#52606d">BROWSER · OUTPUT</text>
 <rect x="1352" y="150" width="206" height="200" rx="8" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.3"/>
@@ -97,14 +97,14 @@
 <rect x="1352" y="368" width="206" height="112" rx="8" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.3"/>
 <text x="1364" y="392" font-size="16" font-weight="700" fill="#1f2933">Compare table</text>
 <text x="1364" y="414" font-size="13.5" fill="#52606d">5 models side by side:</text>
-<text x="1364" y="433" font-size="13.5" fill="#52606d">verdict, threshold,</text>
-<text x="1364" y="452" font-size="13.5" fill="#52606d">ms, ping</text>
+<text x="1364" y="433" font-size="13.5" fill="#52606d">verdict + P(off), ms;</text>
+<text x="1364" y="452" font-size="13.5" fill="#52606d">threshold on hover</text>
 <rect x="1352" y="498" width="206" height="150" rx="8" fill="#ffffff" stroke="#9aa5b1" stroke-width="1.3"/>
 <text x="1364" y="522" font-size="16" font-weight="700" fill="#1f2933">Response-time log</text>
 <text x="1364" y="544" font-size="13.5" fill="#52606d">side panel: ms of every</text>
-<text x="1364" y="563" font-size="13.5" fill="#52606d">message, mean, % within</text>
-<text x="1364" y="582" font-size="13.5" fill="#52606d">budget, chart with</text>
-<text x="1364" y="601" font-size="13.5" fill="#52606d">the 50 ms line</text>
+<text x="1364" y="563" font-size="13.5" fill="#52606d">message, count, flagged,</text>
+<text x="1364" y="582" font-size="13.5" fill="#52606d">mean ms, messages</text>
+<text x="1364" y="601" font-size="13.5" fill="#52606d">within 50 ms</text>
 <path d="M 265,206 L 315,206" fill="none" stroke="#7b8794" stroke-width="1.8" marker-end="url(#arrow)"/>
 <path d="M 425,350 L 425,378" fill="none" stroke="#7b8794" stroke-width="1.8" marker-end="url(#arrow)"/>
 <path d="M 330,350 L 330,500" fill="none" stroke="#7b8794" stroke-width="1.8" marker-end="url(#arrow)"/>
