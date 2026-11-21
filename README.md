@@ -11,7 +11,7 @@ are masked, and a side panel logs the response time of every message and lets th
 
 ![The app: live labels with P(offensive), masked messages, response-time log and model comparison](docs/app_screenshot.png)
 
-- **Demo video:** _link added at submission_
+- **Demo video (2 min, narrated):** https://drive.google.com/file/d/1gTAMAVCKOHBQ9neSC2fiGzrOqaD45Sa2/view
 - **Trained models (Hugging Face Hub, 650 MB):** https://huggingface.co/mertcankaratas/turkish-chat-moderation
   (mirror: one 577 MB archive on [Google Drive](https://drive.google.com/file/d/1YgSwdN9ispbIZBIR4Ocdg_s6bcXh6YTL/view))
 
